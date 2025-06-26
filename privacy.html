@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | SproutRoot Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2C5E1A;
+            --secondary: #5D8B4D;
+            --accent: #6BB77B;
+            --text: #333333;
+            --light: #F8F8F8;
+            --water: #88C0D0;
+        }
+        
+        body {
+            font-family: 'Garamond', serif;
+            color: var(--text);
+            background-color: #F9F9F7;
+            line-height: 1.6;
+        }
+        
+        .water-effect {
+            background: linear-gradient(180deg, rgba(136,192,208,0.15) 0%, rgba(255,255,255,1) 100%);
+        }
+        
+        .leaf-bg {
+            background-image: url('https://images.unsplash.com/photo-1534710961216-75c88202f43e?q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .water-feature {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .water-feature:after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            left: -10%;
+            width: 120%;
+            height: 100px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="%2388C0D0" fill-opacity="0.3" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"/><path fill="%2388C0D0" fill-opacity="0.3" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s仁晶D5，16-39，116.92-43.05c59.73-5.85，113.28，22.88，168.9，38.84，30.2，8.66，59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"/><path fill="%2388C0D0" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"/></svg>');
+            background-repeat: repeat-x;
+            background-size: 1200px 100px;
+            animation: wave 15s linear infinite;
+        }
+        
+        @keyframes wave {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-600px); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(to right, var(--primary), var(--water));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .privacy-point {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-leaf text-3xl gradient-text"></i>
+                        <span class="text-2xl font-bold gradient-text">SproutRoot Care</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Home</a>
+                    <a href="privacy.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800" aria-current="page">Privacy</a>
+                    <a href="terms.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Terms & Conditions</a>
+                    <a href="cookies.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Cookies</a>
+                    <a href="contact.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Privacy Policy Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Privacy Policy</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Last Updated: January 15, 2023</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg text-gray-700 mb-8">SproutRoot Care is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this policy carefully.</p>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">1. Information We Collect</h2>
+                    <p class="text-gray-700">We collect personal information you voluntarily provide when you register on our site, book services, subscribe to our newsletter, or fill out forms. This may include your name, email address, phone number, mailing address, and payment details. We also automatically collect certain technical data about your device and browsing behavior through cookies and similar technologies to improve your experience and analyze site usage patterns.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">2. How We Use Your Information</h2>
+                    <p class="text-gray-700">We use the collected information to provide and improve our services, process transactions, communicate with you about your account or services, respond to inquiries, send periodic emails/newsletters, personalize your experience, improve our website, detect and prevent fraud, and comply with legal obligations. Your information helps us better respond to your individual needs and deliver more relevant content.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">3. Information Sharing & Disclosure</h2>
+                    <p class="text-gray-700">We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties without your consent, except to trusted third parties who assist us in operating our website, conducting business, or serving you, so long as those parties agree to keep this information confidential. We may also release information when appropriate to comply with law, enforce site policies, or protect ours or others' rights, property, or safety.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">4. Data Security Measures</h2>
+                    <p class="text-gray-700">We implement a variety of security measures to maintain the safety of your personal information including SSL technology, encrypted databases, access controls, and regular security audits. However, no method of transmission over the Internet or electronic storage is 100% secure, so we cannot guarantee absolute security. We recommend using strong passwords and keeping login information confidential.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">5. Cookies and Tracking Technologies</h2>
+                    <p class="text-gray-700">We use cookies to enhance your experience on our site. Cookies are small files transferred to your computer's hard drive through your web browser that enables sites to recognize your browser and capture certain information. You can choose to disable cookies through your browser settings, but this may affect site functionality. We also use analytics services to gather data about site traffic and interaction for improvement purposes.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">6. Third-Party Links</h2>
+                    <p class="text-gray-700">Occasionally, we may include links to third-party products or services on our website. These third-party sites have separate and independent privacy policies. We have no responsibility or liability for the content and activities of these linked sites but seek to protect the integrity of our site and welcome feedback about these sites. We recommend reviewing their policies before providing any personal information.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">7. Children's Privacy</h2>
+                    <p class="text-gray-700">Our services are not directed to individuals under 13, and we do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under age 13 without parental consent, we will take steps to remove that information. Parents who believe their child may have provided us information can contact us immediately for removal.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">8. International Data Transfers</h2>
+                    <p class="text-gray-700">Your information, including personal data, may be transferred to — and maintained on — computers located outside your country where data protection laws may differ. By using our services, you consent to this transfer. We will take all steps reasonably necessary to ensure your data is treated securely and in accordance with this policy. When transferring data internationally, we implement appropriate safeguards as required by applicable laws.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">9. Your Privacy Rights</h2>
+                    <p class="text-gray-700">Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, or delete your data, restrict or object to processing, receive your data in a portable format, or withdraw consent. These requests can be made by contacting us. We will respond within a reasonable timeframe and may require verification of your identity before processing certain requests.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">10. California Privacy Rights</h2>
+                    <p class="text-gray-700">California residents have specific rights under the CCPA, including knowing what personal data is collected, whether their personal data is sold/disclosed, saying no to the sale of personal data, accessing their personal data, equal service and price, and deletion rights. We do not sell personal information. California residents can make requests under CCPA by contacting us through the provided methods.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">11. GDPR Compliance</h2>
+                    <p class="text-gray-700">For users in the EU/EEA, we comply with the General Data Protection Regulation (GDPR). As a data controller, we process personal data only when we have a lawful basis (consent, contract performance, legal obligation, legitimate interests, etc.). You have rights including access, rectification, erasure, restriction, portability, objection, and withdrawal of consent. Our Data Protection Officer can be contacted for GDPR-related inquiries.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">12. Data Retention Policy</h2>
+                    <p class="text-gray-700">We retain personal information only for as long as necessary to fulfill the purposes for which it was collected, including for satisfying legal, accounting, or reporting requirements. When determining retention periods, we consider the amount, nature, sensitivity of personal data, potential risk from unauthorized use, processing purposes, and applicable legal requirements. Inactive accounts may be archived after 5 years of inactivity.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">13. Automated Decision Making</h2>
+                    <p class="text-gray-700">We do not use fully automated decision-making that significantly affects individuals without human intervention. Some processing may involve profiling to improve your experience, show relevant content, or prevent fraud. Where such processing has legal or significant effects, we implement appropriate safeguards, including the ability to obtain human intervention, express your point of view, and contest the decision.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">14. Business Transfers</h2>
+                    <p class="text-gray-700">In the event that SproutRoot Care is involved in a merger, acquisition, sale of assets, bankruptcy, or other business transition, your personal information may be among the transferred assets. We will notify you before your personal information is transferred and becomes subject to a different privacy policy. This Privacy Policy would remain in effect until notice of changes is provided.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">15. Newsletter and Marketing Communications</h2>
+                    <p class="text-gray-700">With your consent, we may send periodic emails about company news, special offers, related product information, etc. You can unsubscribe from these communications at any time by clicking the unsubscribe link in the email or contacting us. Even if you unsubscribe from marketing emails, we may still send necessary service-related communications such as appointment confirmations, security notifications, or account updates.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">16. User-Generated Content</h2>
+                    <p class="text-gray-700">If you post content to public areas of our website (reviews, comments, etc.), this information may be read, collected, and used by others. We cannot control how users interact with publicly posted content, so we caution against including personal details. We reserve the right to remove inappropriate content but are not responsible for monitoring all submissions. User-generated content may be retained indefinitely.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">17. Testimonial Information</h2>
+                    <p class="text-gray-700">With your permission, we may post customer testimonials on our site which may contain personal information. We will obtain your consent before posting your name and testimonial. If you wish to update or delete your testimonial, please contact us. We value your feedback and strive to ensure that your experiences are accurately represented.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">18. Changes to This Privacy Policy</h2>
+                    <p class="text-gray-700">We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting a notice on our website or sending you an email. Your continued use of our services after any modifications to the Privacy Policy will constitute your acknowledgment of the modifications and your consent to abide by and be bound by the modified policy.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">19. Contact Us</h2>
+                    <p class="text-gray-700">If you have any questions about this Privacy Policy, the practices of our site, or your dealings with us, please contact us at: <br> SproutRoot Care <br> 25 Union Square W, New York, NY 10003, USA <br> Phone: (123) 456-7890 <br> Email: support@sproutrootcare.com</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">20. Data Breach Procedures</h2>
+                    <p class="text-gray-700">In the event of a data breach, we will notify affected individuals and relevant authorities as required by applicable laws. We will take appropriate measures to investigate the breach, mitigate any potential harm, and prevent future breaches. Our response plan includes assessing the nature of the breach, the data involved, and the potential impact on individuals.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">21. Data Protection Officer</h2>
+                    <p class="text-gray-700">We have appointed a Data Protection Officer (DPO) responsible for overseeing compliance with data protection laws and this Privacy Policy. The DPO can be contacted for any inquiries regarding your personal data, privacy rights, or this policy. Our DPO is committed to ensuring that your privacy is respected and protected.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">22. Privacy Policy for Social Media</h2>
+                    <p class="text-gray-700">Our website may include social media features, such as the Facebook Like button and widgets. These features may collect your IP address, the page you are visiting on our site, and may set a cookie to enable the feature to function properly. Your interactions with these features are governed by the privacy policy of the company providing it. We encourage you to review their policies before engaging with these features.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">23. User Consent</h2>
+                    <p class="text-gray-700">By using our website and services, you consent to our Privacy Policy and agree to its terms. If you do not agree with our policies and practices, you should not use our website or services. We may ask for your explicit consent for certain data processing activities, and you have the right to withdraw your consent at any time.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">24. Opt-Out Options</h2>
+                    <p class="text-gray-700">You may opt-out of receiving marketing communications from us by following the unsubscribe instructions included in each email or by contacting us directly. Please note that even if you opt-out, we may still send you service-related communications that are necessary for the operation of your account or services.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">25. Data Minimization</h2>
+                    <p class="text-gray-700">We adhere to the principle of data minimization, meaning we only collect personal information that is necessary for the purposes outlined in this Privacy Policy. We regularly review our data collection practices to ensure that we are not collecting more information than is needed to provide our services.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">26. User Access to Information</h2>
+                    <p class="text-gray-700">You have the right to request access to the personal information we hold about you. Upon request, we will provide you with a copy of your personal data in a structured, commonly used, and machine-readable format. We may charge a reasonable fee for this service, depending on the complexity of the request.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">27. Data Correction Rights</h2>
+                    <p class="text-gray-700">If you believe that any information we hold about you is inaccurate or incomplete, you have the right to request correction. We will take reasonable steps to verify your identity before making any changes to your personal data. We aim to respond to correction requests promptly and will notify you once the changes have been made.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">28. Data Deletion Requests</h2>
+                    <p class="text-gray-700">You have the right to request the deletion of your personal data when it is no longer necessary for the purposes for which it was collected, or if you withdraw your consent. We will assess your request and delete your data unless we have a legitimate reason to retain it, such as compliance with legal obligations.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">29. Data Portability</h2>
+                    <p class="text-gray-700">You have the right to receive your personal data in a structured, commonly used, and machine-readable format and to transmit that data to another controller. This right applies only to the personal data you have provided to us and is processed based on your consent or a contract.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">30. Right to Object</h2>
+                    <p class="text-gray-700">You have the right to object to the processing of your personal data based on legitimate interests or for direct marketing purposes. If you object, we will cease processing your personal data unless we can demonstrate compelling legitimate grounds for the processing that override your interests, rights, and freedoms.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">31. Right to Restrict Processing</h2>
+                    <p class="text-gray-700">You have the right to request the restriction of processing your personal data in certain circumstances, such as when you contest the accuracy of the data or when you have objected to processing. If we restrict processing, we will inform you before lifting the restriction.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">32. Right to Withdraw Consent</h2>
+                    <p class="text-gray-700">If we are processing your personal data based on your consent, you have the right to withdraw that consent at any time. Withdrawing consent does not affect the lawfulness of processing based on consent before its withdrawal. You can withdraw consent by contacting us using the details provided in this policy.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">33. Privacy Policy Updates</h2>
+                    <p class="text-gray-700">We may update this Privacy Policy periodically to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting a notice on our website or sending you an email. Your continued use of our services after any modifications to the Privacy Policy will constitute your acknowledgment of the modifications and your consent to abide by and be bound by the modified policy.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">34. Contact Information for Privacy Concerns</h2>
+                    <p class="text-gray-700">If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at: <br> SproutRoot Care <br> 25 Union Square W, New York, NY 10003, USA <br> Phone: (123) 456-7890 <br> Email: support@sproutrootcare.com</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">35. Data Protection Impact Assessments</h2>
+                    <p class="text-gray-700">We conduct Data Protection Impact Assessments (DPIAs) when initiating new projects or processing activities that may impact the privacy of individuals. DPIAs help us identify and mitigate risks to personal data and ensure compliance with data protection laws. We take the findings of DPIAs seriously and implement necessary measures to address identified risks.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">36. Privacy by Design</h2>
+                    <p class="text-gray-700">We incorporate privacy considerations into our business processes and systems from the outset. This approach, known as "Privacy by Design," ensures that privacy is a fundamental aspect of our operations and that we proactively address privacy risks. We regularly review our practices to ensure compliance with privacy regulations and best practices.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">37. Employee Training and Awareness</h2>
+                    <p class="text-gray-700">We provide regular training and awareness programs for our employees regarding data protection and privacy practices. This training ensures that our staff understands their responsibilities in handling personal data and the importance of protecting individuals' privacy. We foster a culture of privacy awareness throughout our organization.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">38. Privacy Notices</h2>
+                    <p class="text-gray-700">We provide clear and concise privacy notices to individuals at the point of data collection. These notices inform individuals about the types of personal data we collect, the purposes for which it is used, and their rights regarding their data. We ensure that our privacy notices are easily accessible and understandable.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">39. Data Breach Notification Procedures</h2>
+                    <p class="text-gray-700">In the event of a data breach, we have established procedures to promptly notify affected individuals and relevant authorities as required by applicable laws. Our notification will include details about the nature of the breach, the data involved, and the steps we are taking to mitigate the impact. We take data breaches seriously and act swiftly to protect individuals' rights.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">40. Privacy Policy for Mobile Applications</h2>
+                    <p class="text-gray-700">If you use our mobile applications, this Privacy Policy applies to your use of those applications as well. We may collect additional information through mobile applications, such as location data, and we will inform you of any specific practices related to mobile data collection. We encourage you to review this policy in conjunction with our mobile application terms.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">41. User Feedback and Complaints</h2>
+                    <p class="text-gray-700">We welcome your feedback regarding our privacy practices. If you have any complaints or concerns about how we handle your personal data, please contact us. We take all complaints seriously and will investigate them promptly. We are committed to resolving any issues you may have regarding your privacy.</p>
+                </div>
+                
+                <div class="privacy-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">42. Final Remarks</h2>
+                    <p class="text-gray-700">Your privacy is important to us, and we are committed to protecting your personal information. We encourage you to review this Privacy Policy regularly to stay informed about our practices. Thank you for trusting SproutRoot Care with your personal data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 SproutRoot Care. All rights reserved.</p>
+            <p>Address: 25 Union Square W, New York, NY 10003, USA</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

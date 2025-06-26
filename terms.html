@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | SproutRoot Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2C5E1A;
+            --secondary: #5D8B4D;
+            --accent: #6BB77B;
+            --text: #333333;
+            --light: #F8F8F8;
+            --water: #88C0D0;
+        }
+        
+        body {
+            font-family: 'Garamond', serif;
+            color: var(--text);
+            background-color: #F9F9F7;
+            line-height: 1.6;
+        }
+        
+        .water-effect {
+            background: linear-gradient(180deg, rgba(136,192,208,0.15) 0%, rgba(255,255,255,1) 100%);
+        }
+        
+        .leaf-bg {
+            background-image: url('https://images.unsplash.com/photo-1534710961216-75c88202f43e?q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .water-feature {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .water-feature:after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            left: -10%;
+            width: 120%;
+            height: 100px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="%2388C0D0" fill-opacity="0.3" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"/><path fill="%2388C0D0" fill-opacity="0.3" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"/><path fill="%2388C0D0" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"/></svg>');
+            background-repeat: repeat-x;
+            background-size: 1200px 100px;
+            animation: wave 15s linear infinite;
+        }
+        
+        @keyframes wave {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-600px); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(to right, var(--primary), var(--water));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .terms-point {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-leaf text-3xl gradient-text"></i>
+                        <span class="text-2xl font-bold gradient-text">SproutRoot Care</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Home</a>
+                    <a href="privacy.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Privacy</a>
+                    <a href="terms.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800" aria-current="page">Terms & Conditions</a>
+                    <a href="cookies.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Cookies</a>
+                    <a href="contact.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Terms & Conditions Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Terms & Conditions</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Last Updated: January 15, 2023</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg text-gray-700 mb-8">Welcome to SproutRoot Care. These Terms & Conditions outline the rules and regulations for using our website and services. By accessing this website, we assume you accept these terms in full. Do not continue to use SproutRoot Care's website if you do not accept all of the terms and conditions stated on this page.</p>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">1. Definitions</h2>
+                    <p class="text-gray-700">"Client", "You", and "Your" refers to you, the person accessing this website and accepting the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to SproutRoot Care. "Party", "Parties", or "Us", refers to both the Client and ourselves, or either the Client or ourselves. All terms refer to the offer, acceptance, and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">2. Services Description</h2>
+                    <p class="text-gray-700">SproutRoot Care provides premium gardening and landscape design services including but not limited to water garden design, executive garden management, and urban rooftop oasis creation. Our services are tailored to meet the specific needs of each client, with attention to detail and commitment to excellence. We reserve the right to modify or discontinue any service at any time without notice.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">3. Client Responsibilities</h2>
+                    <p class="text-gray-700">Clients are responsible for providing accurate information about their property and gardening needs. You must ensure that we have proper access to your property at scheduled times. Any changes to the property that may affect our services should be communicated immediately. Clients are responsible for securing any necessary permissions or permits required for our services.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">4. Service Agreements</h2>
+                    <p class="text-gray-700">All services require a written agreement outlining the scope of work, timeline, and payment terms. The agreement becomes binding once signed by both parties. Verbal agreements or understandings not documented in writing are not considered part of the official contract. We reserve the right to refuse service to anyone for any reason at any time.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">5. Pricing and Payments</h2>
+                    <p class="text-gray-700">Our pricing is based on the scope of work and materials required for each project. We provide detailed estimates before commencing work. Payment terms are outlined in each service agreement and typically require a deposit before work begins. We accept various payment methods including credit cards, checks, and bank transfers. Late payments may incur additional charges.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">6. Cancellation Policy</h2>
+                    <p class="text-gray-700">Clients may cancel scheduled services with at least 48 hours notice without penalty. Cancellations made with less than 48 hours notice may be subject to a cancellation fee. For ongoing service contracts, we require 30 days written notice for cancellation. We reserve the right to cancel services at any time with appropriate notice to the client.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">7. Rescheduling</h2>
+                    <p class="text-gray-700">Clients may request to reschedule services with at least 24 hours notice, subject to availability. We will make reasonable efforts to accommodate rescheduling requests. Repeated rescheduling may result in additional charges or termination of services. In case of inclement weather, we will automatically reschedule affected services.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">8. Property Access</h2>
+                    <p class="text-gray-700">Clients must provide safe and unobstructed access to all work areas. We are not responsible for moving personal items or furniture to access work areas. If gates are locked, arrangements must be made to provide access. Our team will respect your property and clean up after completing work each day.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">9. Property Damage</h2>
+                    <p class="text-gray-700">While we take utmost care, we cannot be held responsible for damage to underground utilities, irrigation systems, or other hidden elements not disclosed prior to work commencing. We will repair or replace any damage caused by our negligence at no cost to you. Clients should mark any sensitive areas before work begins.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">10. Plant Guarantee</h2>
+                    <p class="text-gray-700">We guarantee all plants installed by our team for 90 days from date of installation, provided proper care instructions are followed. This guarantee does not cover damage caused by extreme weather, neglect, or acts beyond our control. Replacement plants will be of similar size and quality. The guarantee is void if irrigation systems fail or are modified.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">11. Intellectual Property</h2>
+                    <p class="text-gray-700">All content on this website, including text, graphics, logos, and images, is our property and protected by copyright laws. Landscape designs created by us remain our intellectual property until full payment is received. Clients may not reproduce, distribute, or use our designs without written permission. We may use project photos for marketing unless otherwise agreed.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">12. User Accounts</h2>
+                    <p class="text-gray-700">When you create an account with us, you must provide accurate and complete information. You are responsible for maintaining the confidentiality of your account and password. You agree to accept responsibility for all activities that occur under your account. We reserve the right to refuse service, terminate accounts, or remove content at our discretion.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">13. Prohibited Uses</h2>
+                    <p class="text-gray-700">You may not use our website or services for any illegal or unauthorized purpose. You must not transmit any worms, viruses or any code of a destructive nature. Breaching this provision would constitute a criminal offense and we will report any such breach to the relevant law enforcement authorities. We reserve the right to bar anyone violating these terms from using our services.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">14. Limitation of Liability</h2>
+                    <p class="text-gray-700">In no event shall SproutRoot Care, nor its directors, employees, or agents, be liable for any indirect, incidental, special, consequential or punitive damages resulting from your use of our services. Our total liability for any claim related to our services shall not exceed the amount you paid us for the specific service in question. Some jurisdictions do not allow limitations on liability, so this may not apply to you.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">15. Indemnification</h2>
+                    <p class="text-gray-700">You agree to indemnify and hold harmless SproutRoot Care and its affiliates, officers, agents, and employees from any claim or demand made by any third party due to or arising out of your breach of these Terms, your use of our services, or your violation of any law or the rights of a third party. This includes any legal fees we incur defending against such claims.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">16. Severability</h2>
+                    <p class="text-gray-700">If any provision of these Terms is found to be invalid under any applicable law, such provisions shall be deleted without affecting the remaining provisions herein. The remaining provisions will continue to be valid and enforceable. Any invalid provision shall be replaced with a valid provision that most closely matches the intent of the original provision.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">17. Variation of Terms</h2>
+                    <p class="text-gray-700">SproutRoot Care is permitted to revise these Terms at any time as it sees fit, and by using this website you are expected to review these Terms on a regular basis. Your continued use of our services after changes constitute acceptance of the new terms. We will notify you of significant changes through email or website notices.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">18. Assignment</h2>
+                    <p class="text-gray-700">SproutRoot Care may assign, transfer, or subcontract our rights and/or obligations under these Terms without any notification. You may not assign, transfer, or subcontract any of your rights and/or obligations under these Terms without our prior written consent. Any attempted assignment in violation of this provision shall be null and void.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">19. Governing Law</h2>
+                    <p class="text-gray-700">These Terms shall be governed by and construed in accordance with the laws of the State of New York, without regard to its conflict of law principles. Any disputes arising out of or related to these Terms shall be resolved in the courts located in New York County, New York. You consent to the exclusive jurisdiction of such courts.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">20. Dispute Resolution</h2>
+                    <p class="text-gray-700">In the event of any dispute, claim, or controversy arising out of or relating to these Terms or the services provided, you agree to first attempt to resolve the dispute informally by contacting us. If the dispute cannot be resolved informally, you agree to submit the dispute to binding arbitration in accordance with the rules of the American Arbitration Association.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">21. Force Majeure</h2>
+                    <p class="text-gray-700">We shall not be liable for any failure to perform our obligations under these Terms if such failure results from any cause beyond our reasonable control, including, but not limited to, mechanical, electronic, or communications failure or degradation. This includes acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, or strikes.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">22. Entire Agreement</h2>
+                    <p class="text-gray-700">These Terms constitute the entire agreement between you and SproutRoot Care regarding your use of our services and supersede all prior agreements and understandings, whether written or oral, regarding the same subject matter. Any failure by us to enforce any right or provision of these Terms shall not be deemed a waiver of such right or provision.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">23. Contact Information</h2>
+                    <p class="text-gray-700">If you have any questions about these Terms, please contact us at: <br> SproutRoot Care <br> 25 Union Square W, New York, NY 10003, USA <br> Phone: (123) 456-7890 <br> Email: support@sproutrootcare.com</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">24. User Feedback</h2>
+                    <p class="text-gray-700">We welcome your feedback regarding our services and these Terms. If you have any suggestions or comments, please feel free to contact us. We may use your feedback to improve our services and enhance user experience. However, we are not obligated to respond to or implement any feedback provided.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">25. Third-Party Services</h2>
+                    <p class="text-gray-700">Our website may contain links to third-party websites or services that are not owned or controlled by SproutRoot Care. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites. We encourage you to review the terms and conditions and privacy policies of any third-party services you use.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">26. Marketing Communications</h2>
+                    <p class="text-gray-700">By using our services, you consent to receive marketing communications from us. You can opt-out of receiving these communications at any time by following the unsubscribe instructions included in each email or by contacting us directly. Even if you opt-out, we may still send you service-related communications.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">27. Privacy Policy</h2>
+                    <p class="text-gray-700">Your use of our services is also governed by our Privacy Policy, which outlines how we collect, use, and protect your personal information. By using our services, you acknowledge that you have read and understood our Privacy Policy. We encourage you to review it regularly for updates.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">28. Electronic Communications</h2>
+                    <p class="text-gray-700">By using our services, you consent to receive communications from us electronically. We will communicate with you by email or by posting notices on our website. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically will satisfy any legal requirement that such communications be in writing.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">29. Waiver</h2>
+                    <p class="text-gray-700">No waiver of any term of these Terms shall be deemed a further or continuing waiver of such term or any other term, and any failure of SproutRoot Care to assert a right or provision under these Terms shall not constitute a waiver of such right or provision. Any waiver must be in writing and signed by an authorized representative of SproutRoot Care.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">30. Headings</h2>
+                    <p class="text-gray-700">The headings in these Terms are for convenience only and have no legal or contractual effect. They do not affect the interpretation of these Terms. The use of headings is solely for the purpose of organizing the content and making it easier to read.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">31. No Partnership</h2>
+                    <p class="text-gray-700">Nothing in these Terms shall be construed to create a partnership, joint venture, agency, or employment relationship between you and SproutRoot Care. Neither party has the authority to bind the other in any respect. Each party is an independent contractor and shall not represent itself as such.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">32. Survival</h2>
+                    <p class="text-gray-700">All provisions of these Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability. This ensures that the obligations and rights of both parties continue even after the termination of the agreement.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">33. Compliance with Laws</h2>
+                    <p class="text-gray-700">You agree to comply with all applicable laws, regulations, and ordinances in connection with your use of our services. You are solely responsible for ensuring that your use of our services complies with all relevant laws and regulations. We reserve the right to terminate your access to our services if you violate any applicable laws.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">34. Feedback and Suggestions</h2>
+                    <p class="text-gray-700">We welcome your feedback and suggestions regarding our services and these Terms. If you provide us with any feedback, you grant us the right to use such feedback for any purpose without any obligation to you. We appreciate your input and strive to improve our services based on user feedback.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">35. Third-Party Beneficiaries</h2>
+                    <p class="text-gray-700">These Terms do not create any third-party beneficiary rights. No person or entity that is not a party to these Terms shall have any right to enforce any of its provisions. This ensures that only the parties to these Terms have rights and obligations under them.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">36. Electronic Signatures</h2>
+                    <p class="text-gray-700">You agree that your electronic signature, whether typed or clicked, shall have the same legal effect as a handwritten signature. By using our services, you consent to the use of electronic signatures in connection with these Terms and any agreements or documents related to our services.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">37. No Guarantee of Results</h2>
+                    <p class="text-gray-700">While we strive to provide high-quality services, we do not guarantee specific results or outcomes. The success of our services depends on various factors, including client cooperation and environmental conditions. We will make every effort to meet your expectations, but results may vary.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">38. Marketing and Promotions</h2>
+                    <p class="text-gray-700">We may run promotions, contests, or other marketing initiatives from time to time. Participation in these initiatives is subject to additional terms and conditions, which will be provided at the time of the promotion. We reserve the right to modify or cancel any promotion at our discretion.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">39. User Conduct</h2>
+                    <p class="text-gray-700">You agree to use our services in a manner that is lawful and respectful of others. You shall not engage in any conduct that is harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, or otherwise objectionable. We reserve the right to terminate your access to our services if you violate this provision.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold mb-3 gradient-text">40. Final Provisions</h2>
+                    <p class="text-gray-700">These Terms represent the entire agreement between you and SproutRoot Care regarding your use of our services. They supersede any prior agreements or understandings, whether written or oral. If any provision of these Terms is found to be unenforceable, the remaining provisions shall remain in full force and effect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 SproutRoot Care. All rights reserved.</p>
+            <p>Address: 25 Union Square W, New York, NY 10003, USA</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

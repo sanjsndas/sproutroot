@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SproutRoot Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2C5E1A;
+            --secondary: #5D8B4D;
+            --accent: #6BB77B;
+            --text: #333333;
+            --light: #F8F8F8;
+            --water: #88C0D0;
+        }
+        
+        body {
+            font-family: 'Garamond', serif;
+            color: var(--text);
+            background-color: #F9F9F7;
+            line-height: 1.6;
+        }
+        
+        .water-effect {
+            background: linear-gradient(180deg, rgba(136,192,208,0.15) 0%, rgba(255,255,255,1) 100%);
+        }
+        
+        .leaf-bg {
+            background-image: url('https://images.unsplash.com/photo-1534710961216-75c88202f43e?q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(to right, var(--primary), var(--water));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .contact-point {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .form-input {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            border-radius: 6px;
+            transition: all 0.3s;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        
+        .form-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(107, 183, 123, 0.2);
+            outline: none;
+        }
+        
+        textarea.form-input {
+            min-height: 150px;
+        }
+        
+        .map-container {
+            height: 400px;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-icon {
+            background-color: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-leaf text-3xl gradient-text"></i>
+                        <span class="text-2xl font-bold gradient-text">SproutRoot Care</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Home</a>
+                    <a href="privacy.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Privacy</a>
+                    <a href="terms.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Terms & Conditions</a>
+                    <a href="cookies.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800">Cookies</a>
+                    <a href="contact.html" class="nav-link py-2 font-medium text-gray-700 hover:text-green-800" aria-current="page">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-white water-effect">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">Get In Touch</h2>
+                        <p class="text-gray-700 mb-6">Have questions about our services or want to schedule a consultation? Fill out this form and we'll get back to you within 24 hours.</p>
+                        
+                        <form action="#" method="POST" class="space-y-4">
+                            <div class="md:flex md:space-x-4">
+                                <div class="md:w-1/2">
+                                    <input type="text" name="first_name" placeholder="First Name" class="form-input" required>
+                                </div>
+                                <div class="md:w-1/2">
+                                    <input type="text" name="last_name" placeholder="Last Name" class="form-input" required>
+                                </div>
+                            </div>
+                            <input type="email" name="email" placeholder="Email Address" class="form-input" required>
+                            <input type="tel" name="phone" placeholder="Phone Number" class="form-input">
+                            <select name="service" class="form-input">
+                                <option value="">Select a Service</option>
+                                <option value="water-garden">Water Garden Design</option>
+                                <option value="executive-management">Executive Garden Management</option>
+                                <option value="rooftop-oasis">Urban Rooftop Oasis</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                            <textarea name="message" placeholder="Your Message" class="form-input" required></textarea>
+                            <button type="submit" class="btn-primary text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg w-full">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-green-50 p-8">
+                        <h3 class="text-2xl font-bold mb-6 gradient-text">Contact Information</h3>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Address</h4>
+                                <p class="text-gray-700">25 Union Square W<br>New York, NY 10003, USA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Phone</h4>
+                                <p class="text-gray-700">(123) 456-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email</h4>
+                                <p class="text-gray-700">info@sproutrootcare.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Hours</h4>
+                                <p class="text-gray-700">
+                                    Monday-Friday: 9am-6pm<br>
+                                    Saturday: 10am-4pm<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-800 mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-700 hover:text-green-700 text-2xl"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-gray-700 hover:text-green-700 text-2xl"><i class="fab fa-instagram"></i></a>
+                                <a href="#">class="text-gray-700 hover:text-green-700 text-2xl"><i class="fab fa-pinterest"></i></a>
+                                <a href="#">class="text-gray-700 hover:text-green-700 text-2xl"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Contact Information -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Our Contact Channels</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Multiple ways to reach us for all your landscaping and gardening needs</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">1. Main Office Contact</h3>
+                    <p class="text-gray-700">Our main office at 25 Union Square W is open Monday through Friday from 9am to 6pm. For general inquiries, please call our main line at (123) 456-7890. The office serves as our administrative headquarters and is where our design team is located. Visitors are welcome by appointment, though we recommend calling ahead to ensure someone is available to assist you.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">2. Emergency Contact</h3>
+                    <p class="text-gray-700">For urgent matters related to ongoing projects or emergencies with existing installations, please call our 24/7 emergency line at (123) 456-7891. This number is monitored around the clock for situations requiring immediate attention, such as irrigation system failures, storm damage, or other time-sensitive issues affecting your landscape.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">3. Project Inquiries</h3>
+                    <p class="text-gray-700">For new project inquiries, please use our contact form or email projects@sproutrootcare.com. Include details about your property size, location, budget, and any specific requirements. Our project coordinator will respond within 48 hours to discuss next steps, which typically include scheduling an initial consultation at your property.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">4. Service Department</h3>
+                    <p class="text-gray-700">Existing maintenance clients can reach our service department at service@sproutrootcare.com or (123) 456-7892. This line is dedicated to scheduling routine maintenance visits, addressing service concerns, or making changes to your service plan. Service requests received before 12pm will typically be addressed the same business day.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">5. Billing Questions</h3>
+                    <p class="text-gray-700">For billing inquiries, payment arrangements, or account questions, please contact accounts@sproutrootcare.com or call (123) 456-7893. Our billing department is available Monday through Friday from 10am to 4pm. To expedite service, please have your account number or invoice number available when calling or emailing.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">6. Human Resources</h3>
+                    <p class="text-gray-700">Career inquiries and employment verification requests should be directed to hr@sproutrootcare.com. We accept resumes year-round for qualified landscape professionals and horticultural specialists. Current job openings are posted on our careers page, and all applications must be submitted through our online portal.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">7. Media Inquiries</h3>
+                    <p class="text-gray-700">Members of the press should contact press@sproutrootcare.com for all media-related requests. This includes interview requests, media kit inquiries, and expert commentary on landscaping trends. Our PR team strives to respond to all media inquiries within 24 hours during business days.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">8. Vendor Relations</h3>
+                    <p class="text-gray-700">Vendors and suppliers interested in working with SproutRoot Care should contact procurement@sproutrootcare.com. Include information about your products or services, pricing structure, and availability. Our procurement team reviews new vendor applications quarterly and maintains strict standards for all our suppliers.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">9. Corporate Partnerships</h3>
+                    <p class="text-gray-700">For corporate partnership opportunities, including commercial property services and bulk service contracts, please email partnerships@sproutrootcare.com. Our corporate team specializes in large-scale projects and ongoing maintenance contracts for commercial clients throughout the New York metropolitan area.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">10. Customer Support Hours</h3>
+                    <p class="text-gray-700">Our customer support team is available Monday through Friday from 8am to 7pm, and Saturdays from 9am to 5pm. For immediate assistance during these hours, call (123) 456-7894. After-hours messages will be returned the next business day. You can also reach our support team via live chat on our website during business hours.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">11. Consultation Scheduling</h3>
+                    <p class="text-gray-700">To schedule a design consultation, please use our online booking system or call (123) 456-7895. Consultations typically last 60-90 minutes and include a walkthrough of your property, discussion of your vision, and preliminary recommendations. There is a $150 consultation fee that will be credited toward any services you book with us.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">12. Feedback and Complaints</h3>
+                    <p class="text-gray-700">We welcome feedback about your experience with SproutRoot Care. Compliments, concerns, or complaints can be directed to feedback@sproutrootcare.com or by calling (123) 456-7896. All feedback is reviewed by senior management, and we aim to resolve complaints within 5 business days of receipt.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">13. Technical Support</h3>
+                    <p class="text-gray-700">For technical issues with irrigation systems, lighting controls, or other installed equipment, contact techsupport@sproutrootcare.com or call (123) 456-7897. Our technicians can assist with troubleshooting, programming changes, and emergency repairs. Have your system model and installation date available when contacting support.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">14. Education and Workshops</h3>
+                    <p class="text-gray-700">Information about our gardening workshops and educational programs can be obtained by emailing education@sproutrootcare.com. We offer monthly classes on various gardening topics, from basic plant care to advanced landscape design. Workshop schedules are published quarterly and fill up quickly.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text- 2xl font-bold mb-3 gradient-text">15. Community Involvement</h3>
+                    <p class="text-gray-700">SproutRoot Care is committed to giving back to the community. For inquiries about our community service projects or partnerships, please contact community@sproutrootcare.com. We regularly participate in local events, sponsor community gardens, and offer volunteer opportunities for our team and clients. Your involvement can help us make a positive impact in our neighborhoods.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">16. Sustainability Initiatives</h3>
+                    <p class="text-gray-700">For information on our sustainability practices and eco-friendly services, please reach out to sustainability@sproutrootcare.com. We are dedicated to using sustainable materials, reducing waste, and promoting environmentally friendly gardening practices. Our team is always looking for ways to improve our ecological footprint.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">17. Seasonal Promotions</h3>
+                    <p class="text-gray-700">Stay updated on our seasonal promotions and discounts by subscribing to our newsletter or contacting promotions@sproutrootcare.com. We offer special rates during peak seasons and for new clients. Our newsletter includes gardening tips, project highlights, and exclusive offers.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">18. Referral Program</h3>
+                    <p class="text-gray-700">We appreciate referrals! If you know someone who could benefit from our services, please have them mention your name when they contact us. For more details about our referral program, contact referrals@sproutrootcare.com. Successful referrals can earn you discounts on future services.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">19. Warranty Information</h3>
+                    <p class="text-gray-700">For questions regarding warranties on our services or products, please reach out to warranty@sproutrootcare.com. We provide warranties on certain installations and products, ensuring quality and satisfaction. Our team can clarify the terms and conditions of any warranty you may have.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">20. Landscape Design Resources</h3>
+                    <p class="text-gray-700">For resources related to landscape design, including guides and inspiration, visit our website or contact resources@sproutrootcare.com. We offer a variety of materials to help you plan your garden, including design templates, plant care guides, and seasonal planting calendars.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">21. Client Testimonials</h3>
+                    <p class="text-gray-700">We love hearing from our clients! If you would like to share your experience with SproutRoot Care, please send your testimonial to testimonials@sproutrootcare.com. Your feedback helps us improve our services and provides valuable insights for potential clients.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">22. Gardening Tips and Advice</h3>
+                    <p class="text-gray-700">For personalized gardening tips or advice, feel free to reach out to advice@sproutrootcare.com. Our horticultural experts are available to answer your questions and provide guidance on plant selection, care techniques, and landscape maintenance.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">23. Event Sponsorships</h3>
+                    <p class="text-gray-700">If you are organizing an event and would like to inquire about sponsorship opportunities, please contact events@sproutrootcare.com. We are proud to support local events that promote gardening, sustainability, and community engagement.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">24. Gardening Workshops</h3>
+                    <p class="text-gray-700">For information on upcoming gardening workshops, please email workshops@sproutrootcare.com. We offer hands-on learning experiences for all skill levels, covering topics such as organic gardening, landscape design, and pest management.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">25. Landscape Maintenance Plans</h3>
+                    <p class="text-gray-700">For details about our landscape maintenance plans, please contact maintenance@sproutrootcare.com. We offer customizable plans to fit your needs, ensuring your garden remains healthy and beautiful throughout the year.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">26. Seasonal Planting Guides</h3>
+                    <p class="text-gray-700">For seasonal planting guides and recommendations, please reach out to planting@sproutrootcare.com. Our experts can provide insights on the best plants to grow in your area based on the season and climate conditions.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">27. Pest Control Services</h3>
+                    <p class="text-gray-700">For inquiries about our pest control services, please contact pestcontrol@sproutrootcare.com. We offer eco-friendly pest management solutions to protect your garden while minimizing harm to beneficial insects and the environment.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">28. Landscape Lighting Services</h3>
+                    <p class="text-gray-700">For information on our landscape lighting services, please reach out to lighting@sproutrootcare.com. We design and install lighting solutions that enhance the beauty of your outdoor spaces while providing safety and security.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">29. Irrigation System Installation</h3>
+                    <p class="text-gray-700">For inquiries about irrigation system installation, please contact irrigation@sproutrootcare.com. Our team specializes in designing and installing efficient irrigation systems that conserve water while keeping your landscape lush and healthy.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">30. Landscape Design Consultations</h3>
+                    <p class="text-gray-700">To schedule a landscape design consultation, please email design@sproutrootcare.com. Our designers will work with you to create a personalized plan that reflects your style and meets your needs.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">31. Community Garden Initiatives</h3>
+                    <p class="text-gray-700">For information on our community garden initiatives, please contact communitygardens@sproutrootcare.com. We support local gardening efforts and provide resources for community members interested in starting or maintaining community gardens.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">32. Landscape Restoration Services</h3>
+                    <p class="text-gray-700">For inquiries about landscape restoration services, please reach out to restoration@sproutrootcare.com. We specialize in restoring damaged landscapes and revitalizing outdoor spaces to their former glory.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">33. Green Roof Installations</h3>
+                    <p class="text-gray-700">For information on green roof installations, please contact greenroofs@sproutrootcare.com. Our team can help you design and implement a green roof that enhances your building's aesthetics and improves energy efficiency.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">34. Landscape Architecture Services</h3>
+                    <p class="text-gray-700">For inquiries about our landscape architecture services, please reach out to architecture@sproutrootcare.com. Our licensed landscape architects can assist with large-scale projects, ensuring compliance with local regulations and design standards.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">35. Outdoor Living Spaces</ <p class="text-gray-700">For inquiries about designing outdoor living spaces, please contact outdoorliving@sproutrootcare.com. We specialize in creating functional and beautiful outdoor areas, including patios, decks, and outdoor kitchens, that enhance your enjoyment of your property.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">36. Soil Testing Services</h3>
+                    <p class="text-gray-700">For information on our soil testing services, please reach out to soiltesting@sproutrootcare.com. We provide comprehensive soil analysis to determine nutrient levels and pH balance, helping you make informed decisions about your garden's health.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">37. Tree Care Services</h3>
+                    <p class="text-gray-700">For inquiries about our tree care services, please contact treecare@sproutrootcare.com. We offer tree pruning, removal, and health assessments to ensure the longevity and safety of your trees.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">38. Lawn Care Services</h3>
+                    <p class="text-gray-700">For information on our lawn care services, please reach out to lawncare@sproutrootcare.com. We provide fertilization, aeration, and weed control services to keep your lawn healthy and vibrant.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">39. Seasonal Cleanup Services</h3>
+                    <p class="text-gray-700">For inquiries about our seasonal cleanup services, please contact cleanup@sproutrootcare.com. We offer spring and fall cleanup services to prepare your garden for the changing seasons.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold mb-3 gradient-text">40. Custom Garden Design</h3>
+                    <p class="text-gray-700">For custom garden design inquiries, please reach out to customdesign@sproutrootcare.com. Our team will work with you to create a unique garden that reflects your personal style and enhances your outdoor space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 SproutRoot Care. All rights reserved.</p>
+            <p>Address: 25 Union Square W, New York, NY 10003, USA</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>
